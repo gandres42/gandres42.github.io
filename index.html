@@ -3,76 +3,64 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gavin Andres</title>
 </head>
-<body style="background-color: #102027">
-    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center">
-        <h1 style="color: white; font-family: 'Poppins', sans-serif;">Gavin Andres</h1>
-        <button onclick="location.replace('https://github.com/gandres42/')">
-            <img src="assets/github.webp">
-            <div class="button_text">
-                GitHub
-            </div>
-        </button>
-
-        <button onclick="location.replace(' www.linkedin.com/in/gandres42')">
-            <img src="assets/linkedin.webp">
-            <div class="button_text">
-                LinkedIn
-            </div>
-        </button>
-
-        <button onclick="location.replace('https://drive.google.com/file/d/18zeKD8gz2iIs5wPGsO-3bA6csJ0U7XWd/view?usp=sharing')">
-            <img src="assets/drive.png">
-            <div class="button_text">
-                Resume
-            </div>
-        </button>
-
-        <button onclick="window.location = 'mailto:gandres2416@gmail.com'">
-            <img src="assets/mail.png">
-            <div class="button_text">
-                Email
-            </div>
-        </button>
+<body style="background-color: #282A33;">
+<div class="container" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">
+    <div style="display: inline-block; text-align: center; width: 100%">
+        <h1>Gavin Andres</h1>
     </div>
+    <div>
+        <div class="row">
+            <div class="col-sm"><a href="https://www.github.com/gandres42"><button><img src="assets/github.webp" style="width: 50px; margin: 5px;"><br>Github</button></a></div>
+            <div class="col-sm"><a href="https://www.linkedin.com/in/gandres42"><button><img src="assets/linkedin.webp" style="width: 50px; margin: 5px;"><br>LinkedIn</button></a></div>
+        </div>
+        <div class="row">
+            <div class="col-sm"><a href="https://drive.google.com/file/d/18zeKD8gz2iIs5wPGsO-3bA6csJ0U7XWd/view?usp=sharing"><button><img src="assets/drive.png" style="width: 50px; margin: 5px;"><br>Resume</button></a></div>
+            <div class="col-sm"><a href="mailto:gandres2416@gmail.com"><button><img src="assets/mail.png" style="width: 50px; margin: 5px;"><br>Mail</button></a></div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
-<style>
-    img
+<style type="text/css">
+    h1
     {
-        width: 35px;
-        height: 35px;
-        position: relative;
-        transform: translateY(-50%);
-        top: 20px;
+        color: white;
+        font-family: Poppins;
+        font-size: 60px;
     }
     button
     {
-        line-height: 35px;
+        width: 100%;
         border-style: solid;
         border-color: white;
-        background: white;
-        color: #102027;
-        border-radius: 3px;
-        width: 200px;
-        height: 90px;
-        padding: 10px;
+        font-family: Poppins;
         font-size: large;
-        transition-duration: 150ms;
-        font-family: 'Poppins', sans-serif;
-        margin: 6px;
+        border-radius: 3px;
+        background-color: white;
+        transition-duration: .2s;
     }
     button:hover
     {
-        background-color: #102027;
+        background-color: transparent;
         color: white;
-        transition-duration: 150ms;
+        transition-duration: .2s;
     }
-    .button_text
+    .col-sm
     {
-        margin-top: -8px;
+        padding: 5px;
+    }
+    .container
+    {
+        max-width: 600px;
     }
 </style>
