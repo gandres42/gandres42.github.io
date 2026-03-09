@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gavin Andres</title>
+  <style>
+    body {
+      background: #111111;
+      color: #ffffff;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 4rem;
+    }
+    #tree {
+      display: inline-block;
+    }
+    h1 {
+      text-align: left;
+      font-size: 2rem;
+      font-weight: normal;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: monospace;
+      font-size: 1rem;
+    }
+    li a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    li.mid  a::before { content: "├── "; }
+    li.last a::before { content: "└── "; }
+  </style>
+</head>
+<body>
+  <div id="tree">
+    <h1>Gavin Andres</h1>
+    <ul>
+      <li class="mid" ><a href="https://github.com/gandres42/gandres42.github.io/wiki">Wiki</a></li>
+      <li class="mid" ><a href="https://www.linkedin.com/in/">LinkedIn</a></li>
+      <li class="last"><a href="https://github.com/gandres42">GitHub</a></li>
+    </ul>
+  </div>
+</body>
+</html>
